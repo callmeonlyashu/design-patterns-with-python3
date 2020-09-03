@@ -19,3 +19,7 @@ Decorators provide a flexible alternative to subclassing for extending functiona
 The Factory Method Pattern defines an interface for creating an object, but lets subclass decide which class to instantiate. 
 
 Factory Method lets a class defer instantiation to subclasses.
+
+## Singleton Pattern
+
+The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it.
