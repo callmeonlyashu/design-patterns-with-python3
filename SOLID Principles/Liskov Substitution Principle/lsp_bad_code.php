@@ -18,9 +18,11 @@ class Rectangle {
 class Square extends Rectangle {
   public function setWidth($w) {
     $this->width = $w;
+    $this->height = $w;
   }
  
   public function setHeight($h) {
     $this->height = $h;
+    $this->width = $h;
   }
 }

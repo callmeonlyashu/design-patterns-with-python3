@@ -31,6 +31,10 @@ class Square implements Quadrilateral {
       // Do Stuff
     }
 
+    public function setWidth($h) {
+      // Do Stuff
+    }
+
     public function getArea() {
       // Do Stuff
     }

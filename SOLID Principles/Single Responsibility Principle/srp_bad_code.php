@@ -1,13 +1,18 @@
 <?php
 
-class Page {
-    protected $title;
-   
-    public function getPage($title) {
-      return $this->title;
+class User {
+  
+    private $email;
+    
+    public function setEmail() {
+      // Setter
     }
-   
-    public function formatJson() {
-      return json_encode( $this->title );
+
+    public function getEmail() {
+      // Getter
     }
-  }
+    
+    public function store() {
+        // Store attributes into a database...
+    }
+}

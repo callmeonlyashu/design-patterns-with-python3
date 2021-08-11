@@ -1,27 +1,39 @@
 <?php
 
-interface Worker {
- 
-  public function takeBreak();
- 
-  public function code();
- 
-  public function callToClient();
- 
-  public function attendMeetings();
- 
-  public function getPaid();
+interface VehicleInterface {
+    public function drive();
+    public function fly();
 }
 
-class Manager implements Worker {
-  public function code() {
-    return false;
-  }
+class FutureCar implements VehicleInterface {
+    
+    public function drive() {
+        echo 'Driving a future car!';
+    }
+  
+    public function fly() {
+        echo 'Flying a future car!';
+    }
 }
 
+class Car implements VehicleInterface {
+    
+    public function drive() {
+        echo 'Driving a car!';
+    }
+  
+    public function fly() {
+        throw new Exception('Not implemented method');
+    }
+}
 
-class Developer implements Worker {
-  public function callToClient() {
-    echo "I'll ask my manager.";
-  }
+class Airplane implements VehicleInterface {
+  
+    public function drive() {
+        throw new Exception('Not implemented method');
+    }
+    
+    public function fly() {
+        echo 'Flying an airplane!';
+    }
 }

@@ -1,23 +1,34 @@
 <?php
 
-interface Worker {
-  public function takeBreak();
-  public function getPaid();
-}
- 
-interface Coder {
-  public function code();
-}
- 
-interface ClientFacer {
-  public function callToClient();
-  public function attendMeetings();
+interface CarInterface {
+    public function drive();
 }
 
-class Developer implements Worker, Coder {
-  // Do your stuff
+interface AirplaneInterface {
+    public function fly();
 }
- 
-class Manager implements Worker, ClientFacer {
-  // Do your stuff.
+
+class FutureCar implements CarInterface, AirplaneInterface {
+    
+    public function drive() {
+        echo 'Driving a future car!';
+    }
+  
+    public function fly() {
+        echo 'Flying a future car!';
+    }
+}
+
+class Car implements CarInterface {
+    
+    public function drive() {
+        echo 'Driving a car!';
+    }
+}
+
+class Airplane implements AirplaneInterface {
+    
+    public function fly() {
+        echo 'Flying an airplane!';
+    }
 }
