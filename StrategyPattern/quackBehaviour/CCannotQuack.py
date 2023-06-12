@@ -1,4 +1,4 @@
-from ..abstractClasses.AbstractQuackBehaviour import QuackBehaviour
+from abstractClasses.AbstractQuackBehaviour import QuackBehaviour
 
 class CCannotQuack( QuackBehaviour ):
 

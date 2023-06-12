@@ -1,4 +1,4 @@
-from ..abstractClasses.AbstractFlyBehaviour import FlyBehaviour
+from abstractClasses.AbstractFlyBehaviour import FlyBehaviour
 
 
 class CRocketFly(FlyBehaviour):
