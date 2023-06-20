@@ -23,3 +23,7 @@ Factory Method lets a class defer instantiation to subclasses.
 ## Singleton Pattern
 
 The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it.
+
+## Observer Pattern
+
+Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
