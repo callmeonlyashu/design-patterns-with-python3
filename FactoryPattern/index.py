@@ -1,5 +1,5 @@
-from CChicagoPizzaFactory import ChicagoPizzaFactory
-from CNYPizzaFactory import NyPizzaFactory
+from CChicagoPizzaStore import ChicagoPizzaFactory
+from CNYPizzaStore import NyPizzaFactory
 
 pizzaNYCheese = NyPizzaFactory()
 pizzaNYCheese.orderPizza('Veggie')

@@ -1,12 +1,13 @@
 from abc import ABC, abstractmethod
+
+
 class PizzaStore(ABC):
 
     def __init__(self):
         super().__init__()
 
-    def orderPizza(self, typeOfPizza):
-
-        pizza = self.createPizza(typeOfPizza)
+    def orderPizza(self, store):
+        pizza = self.createPizza(store)
         pizza.prepare()
         pizza.bake()
         pizza.cut()
