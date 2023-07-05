@@ -1,3 +1,6 @@
+from config.logger import logger as log
+
+
 class Database():
 
     __objDatabase = None
@@ -10,8 +13,8 @@ class Database():
 
     @classmethod
     def getInstance( cls ):
-        if( cls.__objDatabase == None ):
-            print( "First Instance" )
+        if cls.__objDatabase == None:
+            log.info("First Instance")
             cls.__objDatabase = Database()
         
         return cls.__objDatabase

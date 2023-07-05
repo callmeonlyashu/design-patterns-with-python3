@@ -1,4 +1,5 @@
 from abstractClasses.AbstractFlyBehaviour import FlyBehaviour
+from config.logger import logger as log
 
 
 class CRocketFly(FlyBehaviour):
@@ -7,4 +8,4 @@ class CRocketFly(FlyBehaviour):
         super().__init__()
 
     def fly(self):
-        print("I can fly with a Rocket.")
+        log.info("I can fly with a Rocket.")

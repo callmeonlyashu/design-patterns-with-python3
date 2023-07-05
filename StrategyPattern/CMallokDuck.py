@@ -1,6 +1,7 @@
 from abstractClasses.AbstractDuck import Duck
 from flyBehaviour.CRocketFly import CRocketFly
 from quackBehaviour.CMallockQuack import CMallokQuack
+from config.logger import logger as log
 
 
 class CMallokDuck(Duck):
@@ -11,7 +12,7 @@ class CMallokDuck(Duck):
         self.quackBehaviour = CMallokQuack()
 
     def display(self):
-        print("I am the Mallock duck")
+        log.info("I am the Mallock duck")
 
     def getFlyBehaviour(self):
         self.flyBehaviour.fly()

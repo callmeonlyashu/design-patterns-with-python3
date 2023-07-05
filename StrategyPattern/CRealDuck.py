@@ -1,6 +1,8 @@
 from abstractClasses.AbstractDuck import Duck
 from flyBehaviour.CCanFly import CCanFly
 from quackBehaviour.CCanQuack import CCanQuack
+from config.logger import logger as log
+
 
 class CRealDuck( Duck ):
 
@@ -8,10 +10,9 @@ class CRealDuck( Duck ):
         super().__init__()
         self.flyBehaviour = CCanFly()
         self.quackBehaviour = CCanQuack()
-    
 
     def display(self):
-        print("I am the real duck")
+        log.info("I am the real duck")
 
     def getFlyBehaviour(self):
         self.flyBehaviour.fly()

@@ -1,4 +1,5 @@
 from abstractClasses.AbstractQuackBehaviour import QuackBehaviour
+from config.logger import logger as log
 
 
 class CMallokQuack(QuackBehaviour):
@@ -7,4 +8,4 @@ class CMallokQuack(QuackBehaviour):
         super().__init__()
 
     def quack(self):
-        print("I can speak like a Mallok Duck")
+        log.info("I can speak like a Mallok Duck")

@@ -1,4 +1,7 @@
 from abc import ABC, abstractmethod
+from config.logger import logger as log
+
+
 class Duck(ABC):
 
     def __init__(self):

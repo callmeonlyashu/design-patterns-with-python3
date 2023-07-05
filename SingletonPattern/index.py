@@ -1,6 +1,8 @@
 from CDatabase import Database
+from config.logger import logger as log
+
 
 db = Database.getInstance()
-print(db)
+log.info(db)
 db1 = Database.getInstance()
-print(db1)
+log.info(db1)

@@ -1,4 +1,6 @@
 from abstractClasses.CAbstractBevarages import Bevarages
+from config.logger import logger as log
+
 
 class Epresso( Bevarages ):
 

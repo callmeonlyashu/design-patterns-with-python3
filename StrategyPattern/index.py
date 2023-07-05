@@ -2,6 +2,8 @@ from CRealDuck import CRealDuck
 from CRubberDuck import CRubberDuck
 from CWoodenDuck import CWoodenDuck
 from CMallokDuck import CMallokDuck
+from config.logger import logger as log
+
 
 objDuck = CRealDuck()
 objDuck.display()
