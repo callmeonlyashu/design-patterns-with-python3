@@ -31,3 +31,8 @@ The Singleton Pattern ensures a class has only one instance, and provides a glob
 ## Observer Pattern
 
 Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
+
+## Command Pattern
+
+The Command Pattern encapsulates the request as an object, thereby letting you parameterize
+other objects with different purposes, queue or log requests, and support undoable operations
