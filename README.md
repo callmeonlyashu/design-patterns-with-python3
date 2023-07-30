@@ -58,3 +58,10 @@ easier to use.
 The Adapter pattern converts the interface of the class into the 
 another interface which client expects. Adapter lets classes work together that couldn't otherwise 
 because of incompatible interfaces.
+
+
+### Template Pattern
+
+Template method defined the skeleton of an algorithm in a method, deffering some steps to subclasses. 
+Template method lets subclasses redefine certain steps of an algorithms without changing the algorithm's structure.
+
